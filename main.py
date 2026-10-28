@@ -9,7 +9,7 @@ def main():
     
     # Создаем тестовые объекты
     reporter_1 = DataFrameReporter(float_format = '0.02f', percent_format = '0.03f')
-    reporter_2 = DataFrameReporter(float_format = '0.01f', percent_format = '0.02f', include = True)
+    reporter_2 = DataFrameReporter(float_format = '0.03f', percent_format = '0.01f', include_all = True)
 
     # выводим результат работы класса через созданный метод
     reporter_1.show_report(data, 'Отчет в формате 1:')

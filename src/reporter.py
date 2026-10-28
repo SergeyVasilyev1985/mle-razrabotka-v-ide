@@ -17,7 +17,7 @@ class DataFrameReporter:
         print('Количество дубликатов:', duplicates)
 
         # Вывод доли дубликатов
-        print('Доля дубликатов:', format(duplicates / df.shape[0], self.percent_format))
+        print('Доля дубликатов:', format((duplicates / df.shape[0] * 100), self.percent_format))
 
         # Вывод описательной статистики
         print(df.describe(include='all' if self.include_all else None))
@@ -27,5 +27,5 @@ class DataFrameReporter:
         print(f'Количество пропусков:', null_data)
         
         # вывод доли пропусков во всем датафрейме одним числом с плавающей точкой
-        print('Доля пропусков:', format(null_data / df.size, self.float_format))
+        print('Доля пропусков:', format((null_data / df.size), self.float_format))
 
