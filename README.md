@@ -30,6 +30,7 @@
 Клонирование проекта
 
 ```git clone https://github.com/SergeyVasilyev1985/mle-razrabotka-v-ide```
+
 ```cd <Ваш/путь>```
 
 Cоздание виртуального окружения
@@ -39,6 +40,7 @@ Cоздание виртуального окружения
 активация окружения
 
 ```source venv/Scripts/activate` или `.venv/Scripts/activate```- для Windows
+
 ```source venv/bin/activate`  или `.venv/bin/activate``` - для MacOS и Linux
 
 установка библтотек
@@ -52,12 +54,15 @@ Cоздание виртуального окружения
 ## Структура проекта:
 
  
-.-- main.py
-|-- README.md
-|-- data
-|   `-- README.md
-    `-- payments.csv
-|-- requirements.txt
-`-- src
-    |-- README.md
-    |-- reporter.py    
+```
+├─ data/
+│  ├─ payments.csv
+│  ├─ README.md
+├─ src/
+│  ├─ reporter.py
+│  ├─ README.md
+├─ .gitignore
+├─ main.py
+├─ README.md
+├─  requirements.txt
+```
