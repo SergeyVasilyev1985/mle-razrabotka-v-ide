@@ -1,7 +1,7 @@
 # Импортируем pandas
 import pandas as pd
 # Импортируем наш класс
-from src/reporter import DataFrameReporter
+from src.reporter import DataFrameReporter
 
 def main():
     #Загружаем Dataset
